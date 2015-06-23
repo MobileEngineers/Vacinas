@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1CBB1D71B39AB1300D56C6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBB1D61B39AB1300D56C6E /* AppDelegate.swift */; };
+		A1CBB1DA1B39AB1300D56C6E /* Vacinas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1CBB1D81B39AB1300D56C6E /* Vacinas.xcdatamodeld */; };
+		A1CBB1DC1B39AB1300D56C6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBB1DB1B39AB1300D56C6E /* ViewController.swift */; };
+		A1CBB1DF1B39AB1300D56C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CBB1DD1B39AB1300D56C6E /* Main.storyboard */; };
+		A1CBB1E11B39AB1300D56C6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CBB1E01B39AB1300D56C6E /* Images.xcassets */; };
+		A1CBB1E41B39AB1300D56C6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1CBB1E21B39AB1300D56C6E /* LaunchScreen.xib */; };
+		A1CBB1F01B39AB1300D56C6E /* VacinasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBB1EF1B39AB1300D56C6E /* VacinasTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1CBB1EA1B39AB1300D56C6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1CBB1C91B39AB1300D56C6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1CBB1D01B39AB1300D56C6E;
+			remoteInfo = Vacinas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1CBB1D11B39AB1300D56C6E /* Vacinas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vacinas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CBB1D51B39AB1300D56C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1CBB1D61B39AB1300D56C6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1CBB1D91B39AB1300D56C6E /* Vacinas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vacinas.xcdatamodel; sourceTree = "<group>"; };
+		A1CBB1DB1B39AB1300D56C6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1CBB1DE1B39AB1300D56C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1CBB1E01B39AB1300D56C6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1CBB1E31B39AB1300D56C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A1CBB1E91B39AB1300D56C6E /* VacinasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacinasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CBB1EE1B39AB1300D56C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1CBB1EF1B39AB1300D56C6E /* VacinasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacinasTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1CBB1CE1B39AB1300D56C6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CBB1E61B39AB1300D56C6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1CBB1C81B39AB1300D56C6E = {
+			isa = PBXGroup;
+			children = (
+				A1CBB1D31B39AB1300D56C6E /* Vacinas */,
+				A1CBB1EC1B39AB1300D56C6E /* VacinasTests */,
+				A1CBB1D21B39AB1300D56C6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1CBB1D21B39AB1300D56C6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1CBB1D11B39AB1300D56C6E /* Vacinas.app */,
+				A1CBB1E91B39AB1300D56C6E /* VacinasTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1CBB1D31B39AB1300D56C6E /* Vacinas */ = {
+			isa = PBXGroup;
+			children = (
+				A1CBB1D61B39AB1300D56C6E /* AppDelegate.swift */,
+				A1CBB1DB1B39AB1300D56C6E /* ViewController.swift */,
+				A1CBB1DD1B39AB1300D56C6E /* Main.storyboard */,
+				A1CBB1E01B39AB1300D56C6E /* Images.xcassets */,
+				A1CBB1E21B39AB1300D56C6E /* LaunchScreen.xib */,
+				A1CBB1D81B39AB1300D56C6E /* Vacinas.xcdatamodeld */,
+				A1CBB1D41B39AB1300D56C6E /* Supporting Files */,
+			);
+			path = Vacinas;
+			sourceTree = "<group>";
+		};
+		A1CBB1D41B39AB1300D56C6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1CBB1D51B39AB1300D56C6E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1CBB1EC1B39AB1300D56C6E /* VacinasTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1CBB1EF1B39AB1300D56C6E /* VacinasTests.swift */,
+				A1CBB1ED1B39AB1300D56C6E /* Supporting Files */,
+			);
+			path = VacinasTests;
+			sourceTree = "<group>";
+		};
+		A1CBB1ED1B39AB1300D56C6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1CBB1EE1B39AB1300D56C6E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1CBB1D01B39AB1300D56C6E /* Vacinas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1CBB1F31B39AB1300D56C6E /* Build configuration list for PBXNativeTarget "Vacinas" */;
+			buildPhases = (
+				A1CBB1CD1B39AB1300D56C6E /* Sources */,
+				A1CBB1CE1B39AB1300D56C6E /* Frameworks */,
+				A1CBB1CF1B39AB1300D56C6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vacinas;
+			productName = Vacinas;
+			productReference = A1CBB1D11B39AB1300D56C6E /* Vacinas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1CBB1E81B39AB1300D56C6E /* VacinasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1CBB1F61B39AB1300D56C6E /* Build configuration list for PBXNativeTarget "VacinasTests" */;
+			buildPhases = (
+				A1CBB1E51B39AB1300D56C6E /* Sources */,
+				A1CBB1E61B39AB1300D56C6E /* Frameworks */,
+				A1CBB1E71B39AB1300D56C6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1CBB1EB1B39AB1300D56C6E /* PBXTargetDependency */,
+			);
+			name = VacinasTests;
+			productName = VacinasTests;
+			productReference = A1CBB1E91B39AB1300D56C6E /* VacinasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1CBB1C91B39AB1300D56C6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Ana Elisa Pessoa Aguiar";
+				TargetAttributes = {
+					A1CBB1D01B39AB1300D56C6E = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					A1CBB1E81B39AB1300D56C6E = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = A1CBB1D01B39AB1300D56C6E;
+					};
+				};
+			};
+			buildConfigurationList = A1CBB1CC1B39AB1300D56C6E /* Build configuration list for PBXProject "Vacinas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1CBB1C81B39AB1300D56C6E;
+			productRefGroup = A1CBB1D21B39AB1300D56C6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1CBB1D01B39AB1300D56C6E /* Vacinas */,
+				A1CBB1E81B39AB1300D56C6E /* VacinasTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1CBB1CF1B39AB1300D56C6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CBB1DF1B39AB1300D56C6E /* Main.storyboard in Resources */,
+				A1CBB1E41B39AB1300D56C6E /* LaunchScreen.xib in Resources */,
+				A1CBB1E11B39AB1300D56C6E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CBB1E71B39AB1300D56C6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1CBB1CD1B39AB1300D56C6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CBB1DC1B39AB1300D56C6E /* ViewController.swift in Sources */,
+				A1CBB1D71B39AB1300D56C6E /* AppDelegate.swift in Sources */,
+				A1CBB1DA1B39AB1300D56C6E /* Vacinas.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CBB1E51B39AB1300D56C6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CBB1F01B39AB1300D56C6E /* VacinasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1CBB1EB1B39AB1300D56C6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1CBB1D01B39AB1300D56C6E /* Vacinas */;
+			targetProxy = A1CBB1EA1B39AB1300D56C6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1CBB1DD1B39AB1300D56C6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1CBB1DE1B39AB1300D56C6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1CBB1E21B39AB1300D56C6E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1CBB1E31B39AB1300D56C6E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1CBB1F11B39AB1300D56C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1CBB1F21B39AB1300D56C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1CBB1F41B39AB1300D56C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vacinas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A1CBB1F51B39AB1300D56C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vacinas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A1CBB1F71B39AB1300D56C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VacinasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacinas.app/Vacinas";
+			};
+			name = Debug;
+		};
+		A1CBB1F81B39AB1300D56C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VacinasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacinas.app/Vacinas";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1CBB1CC1B39AB1300D56C6E /* Build configuration list for PBXProject "Vacinas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1CBB1F11B39AB1300D56C6E /* Debug */,
+				A1CBB1F21B39AB1300D56C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1CBB1F31B39AB1300D56C6E /* Build configuration list for PBXNativeTarget "Vacinas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1CBB1F41B39AB1300D56C6E /* Debug */,
+				A1CBB1F51B39AB1300D56C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A1CBB1F61B39AB1300D56C6E /* Build configuration list for PBXNativeTarget "VacinasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1CBB1F71B39AB1300D56C6E /* Debug */,
+				A1CBB1F81B39AB1300D56C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1CBB1D81B39AB1300D56C6E /* Vacinas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1CBB1D91B39AB1300D56C6E /* Vacinas.xcdatamodel */,
+			);
+			currentVersion = A1CBB1D91B39AB1300D56C6E /* Vacinas.xcdatamodel */;
+			path = Vacinas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A1CBB1C91B39AB1300D56C6E /* Project object */;
+}
