@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15B2A991B3AC26C00EDDE7C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15B2A981B3AC26C00EDDE7C /* CloudKit.framework */; };
+		A15B2A9E1B3AD8BC00EDDE7C /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B2A9D1B3AD8BC00EDDE7C /* CloudKitHelper.swift */; };
+		A15B2AA01B3AD9EB00EDDE7C /* VacinasCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B2A9F1B3AD9EB00EDDE7C /* VacinasCloud.swift */; };
 		A1CBB1D71B39AB1300D56C6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBB1D61B39AB1300D56C6E /* AppDelegate.swift */; };
 		A1CBB1DA1B39AB1300D56C6E /* Vacinas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1CBB1D81B39AB1300D56C6E /* Vacinas.xcdatamodeld */; };
 		A1CBB1DC1B39AB1300D56C6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBB1DB1B39AB1300D56C6E /* ViewController.swift */; };
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A15B2A971B3AC25800EDDE7C /* Vacinas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Vacinas.entitlements; sourceTree = "<group>"; };
+		A15B2A981B3AC26C00EDDE7C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A15B2A9D1B3AD8BC00EDDE7C /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
+		A15B2A9F1B3AD9EB00EDDE7C /* VacinasCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacinasCloud.swift; sourceTree = "<group>"; };
 		A1CBB1D11B39AB1300D56C6E /* Vacinas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vacinas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CBB1D51B39AB1300D56C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CBB1D61B39AB1300D56C6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15B2A991B3AC26C00EDDE7C /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +66,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A15B2A9A1B3AD7ED00EDDE7C /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				A15B2A9D1B3AD8BC00EDDE7C /* CloudKitHelper.swift */,
+				A15B2A9F1B3AD9EB00EDDE7C /* VacinasCloud.swift */,
+			);
+			name = CloudKit;
+			sourceTree = "<group>";
+		};
+		A15B2A9B1B3AD7FA00EDDE7C /* Entidades */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entidades;
+			sourceTree = "<group>";
+		};
+		A15B2A9C1B3AD82700EDDE7C /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TabBarController;
+			sourceTree = "<group>";
+		};
 		A1CBB1C81B39AB1300D56C6E = {
 			isa = PBXGroup;
 			children = (
+				A15B2A981B3AC26C00EDDE7C /* CloudKit.framework */,
 				A1CBB1D31B39AB1300D56C6E /* Vacinas */,
 				A1CBB1EC1B39AB1300D56C6E /* VacinasTests */,
 				A1CBB1D21B39AB1300D56C6E /* Products */,
@@ -79,6 +111,10 @@
 		A1CBB1D31B39AB1300D56C6E /* Vacinas */ = {
 			isa = PBXGroup;
 			children = (
+				A15B2A9C1B3AD82700EDDE7C /* TabBarController */,
+				A15B2A9B1B3AD7FA00EDDE7C /* Entidades */,
+				A15B2A9A1B3AD7ED00EDDE7C /* CloudKit */,
+				A15B2A971B3AC25800EDDE7C /* Vacinas.entitlements */,
 				A1CBB1D61B39AB1300D56C6E /* AppDelegate.swift */,
 				A1CBB1DB1B39AB1300D56C6E /* ViewController.swift */,
 				A1CBB1DD1B39AB1300D56C6E /* Main.storyboard */,
@@ -164,6 +200,12 @@
 				TargetAttributes = {
 					A1CBB1D01B39AB1300D56C6E = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 63SRE9K6S5;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					A1CBB1E81B39AB1300D56C6E = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -217,6 +259,8 @@
 			files = (
 				A1CBB1DC1B39AB1300D56C6E /* ViewController.swift in Sources */,
 				A1CBB1D71B39AB1300D56C6E /* AppDelegate.swift in Sources */,
+				A15B2A9E1B3AD8BC00EDDE7C /* CloudKitHelper.swift in Sources */,
+				A15B2AA01B3AD9EB00EDDE7C /* VacinasCloud.swift in Sources */,
 				A1CBB1DA1B39AB1300D56C6E /* Vacinas.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,9 +388,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Vacinas/Vacinas.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Vacinas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -354,9 +402,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Vacinas/Vacinas.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Vacinas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -413,6 +465,7 @@
 				A1CBB1F51B39AB1300D56C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1CBB1F61B39AB1300D56C6E /* Build configuration list for PBXNativeTarget "VacinasTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +474,7 @@
 				A1CBB1F81B39AB1300D56C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
