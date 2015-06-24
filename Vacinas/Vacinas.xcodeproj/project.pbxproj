@@ -10,9 +10,10 @@
 		A15B2A991B3AC26C00EDDE7C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15B2A981B3AC26C00EDDE7C /* CloudKit.framework */; };
 		A15B2A9E1B3AD8BC00EDDE7C /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B2A9D1B3AD8BC00EDDE7C /* CloudKitHelper.swift */; };
 		A15B2AA01B3AD9EB00EDDE7C /* VacinasCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B2A9F1B3AD9EB00EDDE7C /* VacinasCloud.swift */; };
+		A15B2AA21B3B03A600EDDE7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B2AA11B3B03A600EDDE7C /* ViewController.swift */; };
 		A1CBB1D71B39AB1300D56C6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBB1D61B39AB1300D56C6E /* AppDelegate.swift */; };
 		A1CBB1DA1B39AB1300D56C6E /* Vacinas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1CBB1D81B39AB1300D56C6E /* Vacinas.xcdatamodeld */; };
-		A1CBB1DC1B39AB1300D56C6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBB1DB1B39AB1300D56C6E /* ViewController.swift */; };
+		A1CBB1DC1B39AB1300D56C6E /* VacinasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBB1DB1B39AB1300D56C6E /* VacinasTableViewController.swift */; };
 		A1CBB1DF1B39AB1300D56C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CBB1DD1B39AB1300D56C6E /* Main.storyboard */; };
 		A1CBB1E11B39AB1300D56C6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CBB1E01B39AB1300D56C6E /* Images.xcassets */; };
 		A1CBB1E41B39AB1300D56C6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1CBB1E21B39AB1300D56C6E /* LaunchScreen.xib */; };
@@ -34,11 +35,12 @@
 		A15B2A981B3AC26C00EDDE7C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		A15B2A9D1B3AD8BC00EDDE7C /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
 		A15B2A9F1B3AD9EB00EDDE7C /* VacinasCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacinasCloud.swift; sourceTree = "<group>"; };
+		A15B2AA11B3B03A600EDDE7C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1CBB1D11B39AB1300D56C6E /* Vacinas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vacinas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CBB1D51B39AB1300D56C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CBB1D61B39AB1300D56C6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1CBB1D91B39AB1300D56C6E /* Vacinas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vacinas.xcdatamodel; sourceTree = "<group>"; };
-		A1CBB1DB1B39AB1300D56C6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1CBB1DB1B39AB1300D56C6E /* VacinasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacinasTableViewController.swift; sourceTree = "<group>"; };
 		A1CBB1DE1B39AB1300D56C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1CBB1E01B39AB1300D56C6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1CBB1E31B39AB1300D56C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -116,7 +118,8 @@
 				A15B2A9A1B3AD7ED00EDDE7C /* CloudKit */,
 				A15B2A971B3AC25800EDDE7C /* Vacinas.entitlements */,
 				A1CBB1D61B39AB1300D56C6E /* AppDelegate.swift */,
-				A1CBB1DB1B39AB1300D56C6E /* ViewController.swift */,
+				A1CBB1DB1B39AB1300D56C6E /* VacinasTableViewController.swift */,
+				A15B2AA11B3B03A600EDDE7C /* ViewController.swift */,
 				A1CBB1DD1B39AB1300D56C6E /* Main.storyboard */,
 				A1CBB1E01B39AB1300D56C6E /* Images.xcassets */,
 				A1CBB1E21B39AB1300D56C6E /* LaunchScreen.xib */,
@@ -257,7 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CBB1DC1B39AB1300D56C6E /* ViewController.swift in Sources */,
+				A15B2AA21B3B03A600EDDE7C /* ViewController.swift in Sources */,
+				A1CBB1DC1B39AB1300D56C6E /* VacinasTableViewController.swift in Sources */,
 				A1CBB1D71B39AB1300D56C6E /* AppDelegate.swift in Sources */,
 				A15B2A9E1B3AD8BC00EDDE7C /* CloudKitHelper.swift in Sources */,
 				A15B2AA01B3AD9EB00EDDE7C /* VacinasCloud.swift in Sources */,

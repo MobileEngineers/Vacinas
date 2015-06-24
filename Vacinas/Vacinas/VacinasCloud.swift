@@ -13,6 +13,7 @@ class VacinasCloud: NSObject {
     
     var record: CKRecord!
     weak var database: CKDatabase!
+    
     var nome: String!
     var detalhe: String!
     var meses: Int!
@@ -24,9 +25,9 @@ class VacinasCloud: NSObject {
         self.record = record
         self.database = database
         
-        self.nome = record.objectForKey("") as! String
-        self.detalhe = record.objectForKey("") as! String
-        self.meses = record.objectForKey("") as! Int
+        self.nome = record.objectForKey("Name") as! String
+        self.detalhe = record.objectForKey("Detalhe") as! String
+        self.meses = record.objectForKey("Meses") as! Int
     }
    
 }
