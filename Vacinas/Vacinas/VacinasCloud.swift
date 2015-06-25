@@ -29,5 +29,5 @@ class VacinasCloud: NSObject {
         self.detalhe = record.objectForKey("Detalhe") as! String
         self.meses = record.objectForKey("Meses") as! Int
     }
-   
+    
 }

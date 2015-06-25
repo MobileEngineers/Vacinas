@@ -8,21 +8,68 @@
 
 
 import UIKit
+import CloudKit
 
 class CloudKitTableViewController: UITableViewController, CloudKitDelegate {
     
+    // MARK: - Indicator View
+    
+    var loadingView: UIView?
+    
+    var activityIndicator: UIActivityIndicatorView?
+    
+    //
+    
     let model: CloudKitHelper = CloudKitHelper.sharedInstance()
     
-    override func viewDidLoad() 
+    
+    override func viewDidLoad()
     {
         super.viewDidLoad()
-        model.delegate = self;
+        
+        loading()
+        
+        self.model.delegate = self;
         
         cloudKitHelper.fetchVacinas(nil)
+        
     }
     
-    override func didReceiveMemoryWarning()
-    {       super.didReceiveMemoryWarning()     }
+    func loading(){
+        
+        if self.loadingView == nil{
+            self.loadingView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
+            self.loadingView?.center = CGPointMake(self.view.center.x, self.view.center.y)
+            self.loadingView?.backgroundColor = UIColor.blackColor()
+            self.loadingView?.alpha = 0.5
+            
+        }
+        self.view.addSubview(self.loadingView!)
+        if self.activityIndicator == nil {
+            
+            self.activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
+            self.activityIndicator!.alpha = 1
+            self.activityIndicator!.hidesWhenStopped = false
+            self.activityIndicator!.center = CGPointMake(self.view.center.x, self.view.center.y)
+            
+        }
+        
+        self.loadingView!.addSubview(activityIndicator!)
+        self.activityIndicator!.startAnimating()
+        
+    }
+    
+    func finishedLoading(){
+        self.loadingView?.removeFromSuperview()
+        self.activityIndicator!.removeFromSuperview()
+    }
+    
+    
+    func reloadData(){
+        tableView.reloadData()
+        self.finishedLoading()
+        
+    }
     
     // MARK: - Table view data source
     
@@ -32,6 +79,7 @@ class CloudKitTableViewController: UITableViewController, CloudKitDelegate {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         NSLog("\(cloudKitHelper.vacinas.count)")
+        
         return cloudKitHelper.vacinas.count
     }
     
@@ -49,7 +97,7 @@ class CloudKitTableViewController: UITableViewController, CloudKitDelegate {
     {
         NSLog("Model refreshed \(cloudKitHelper.vacinas.count)")
         refreshControl?.endRefreshing()
-        tableView.reloadData()
+        reloadData()
         
     }
     

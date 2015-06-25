@@ -19,7 +19,7 @@ protocol CloudKitDelegate {
 class CloudKitHelper {
     var container : CKContainer
     var publicDB : CKDatabase
-
+    
     var delegate : CloudKitDelegate?
     var vacinas = [VacinasCloud]()
     
@@ -46,11 +46,16 @@ class CloudKitHelper {
     func fetchVacinas(insertedRecord: CKRecord?)
     {
         let predicate = NSPredicate(value: true)
-        //let sort = NSSortDescriptor(key: "creationDate", ascending: false)
+        
+        // Descriptor para Ordenar o array por nome e ordem crescente
+        let sort = NSSortDescriptor(key: "Name", ascending: true)
         
         let query = CKQuery(recordType: "Vacinas",
             predicate:  predicate)
-        //query.sortDescriptors = [sort]
+        
+        // Ordena usando o Descriptor
+        query.sortDescriptors = [sort]
+        
         publicDB.performQuery(query, inZoneWithID: nil) {
             results, error in
             if error != nil {
@@ -59,6 +64,7 @@ class CloudKitHelper {
                     return
                 }
             } else {
+                
                 self.vacinas.removeAll()
                 for record in results{
                     let todo = VacinasCloud(record: record as! CKRecord, database: self.publicDB)
@@ -69,6 +75,8 @@ class CloudKitHelper {
                     self.vacinas.insert(todo, atIndex: 0)
                 }
                 NSLog("fetch after save : \(self.vacinas.count)")
+                
+                
                 dispatch_async(dispatch_get_main_queue()) {
                     self.delegate?.modelUpdated()
                     return
@@ -78,74 +86,3 @@ class CloudKitHelper {
     }
 }
 let cloudKitHelper = CloudKitHelper()
-
-
-
-
-//import Foundation
-//import CloudKit
-//
-//protocol CloudKitDelegate
-//{
-//    func errorUpdating(error: NSError)
-//    func modelUpdated()
-//}
-//
-//class CloudKitHelper {
-//    
-//    class func sharedInstance() -> CloudKitHelper
-//    {       return CloudKitHelperSingleton    }
-//    
-//    var delegate: CloudKitDelegate?
-//    
-//    var vacinas = [VacinasCloud]()
-//    
-//    let container: CKContainer
-//    let publicDB: CKDatabase
-//    
-//    init()
-//    {
-//        container = CKContainer.defaultContainer()
-//        publicDB = container.publicCloudDatabase
-//    }
-//    
-//    func saveRecord(vacina: NSString)
-//    {
-//        let vacinaRecord = CKRecord(recordType: "Vacinas")
-//        vacinaRecord.setValue(vacina, forKey: "Name")
-//        publicDB.saveRecord(vacinaRecord, completionHandler: {(record, error) - &gt; Void in NSLog("Saved to cloud kit") })
-//    }
-//
-//    
-//    func fetchVacinas(insertedRecord: CKRecord?)
-//    {
-//        let predicate = NSPredicate(value: true)
-//        let query = CKQuery(recordType: "Vacinas", predicate: predicate)
-//        publicDB.performQuery(query, inZoneWithID: nil)
-//        {
-//            results, error in
-//            if error != nil
-//            {
-//                dispatch_async(dispatch_get_main_queue())
-//                {
-//                    self.delegate?.errorUpdating(error)
-//                    return
-//                }
-//            } else {
-//                self.vacinas.removeAll()
-//                for record in results {
-//                    let vacina = VacinasCloud(record: record as! CKRecord, database: self.publicDB)
-//                    self.vacinas.append(vacina)
-//                    
-//                    //quando o CoreData estiver funcionando fazer aqui...
-//                }
-//                dispatch_async(dispatch_get_main_queue()) {
-//                    self.delegate?.modelUpdated()
-//                }
-//            }
-//        }
-//    }
-//   
-//}
-//
-//let CloudKitHelperSingleton = CloudKitHelper()

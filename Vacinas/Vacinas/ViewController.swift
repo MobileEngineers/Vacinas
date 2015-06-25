@@ -10,22 +10,22 @@ import UIKit
 import CloudKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var inputText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func disMiss() {
-                self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
-
+    
     @IBAction func cancel(sender: AnyObject) {
         disMiss()
     }
@@ -35,6 +35,6 @@ class ViewController: UIViewController {
         self.inputText.text = nil
         disMiss()
     }
-
+    
 }
 
