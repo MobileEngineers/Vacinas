@@ -13,7 +13,7 @@ class CloudKitTableViewController: UITableViewController, CloudKitDelegate {
     
     let model: CloudKitHelper = CloudKitHelper.sharedInstance()
     
-    override func viewDidLoad()
+    override func viewDidLoad() 
     {
         super.viewDidLoad()
         model.delegate = self;
